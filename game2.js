@@ -16,11 +16,12 @@ $submitbutton.onclick=() =>{
         location.href="loose.html";
     }
     else if(userinput>guessnumber){
-         message='Oops! Your Guess is too high. You have ${lives} lives remaining.';
+         message=`Oops! Your Guess is too high. You have ${lives} lives remaining.`;
         
     }
     else if(userinput<guessnumber){
-        message='Oops! Your Guess is too low. You have ${lives} lives remaining.';
+        message=`Oops! Your Guess is too low. You have ${lives} lives remaining.`;
+        
     }
 
     $message.style.display="inherit";
